@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+//Vue全局使用Router
 Vue.use(Router)
 
 /* Layout */
@@ -56,23 +57,17 @@ export const constantRoutes = [
   },
 
   {
-    path: '/example',
+    path: '/stock',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
+    redirect: '/stock/table/demo',
+    name: 'stock-data-table',
     meta: { title: 'Example', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'table',
+        path: 'table/:tableName',
         name: 'Table',
         component: () => import('@/views/table/index'),
         meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
       }
     ]
   },

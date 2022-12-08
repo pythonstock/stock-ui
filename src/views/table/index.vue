@@ -155,6 +155,9 @@ export default {
   },
   methods: {
     getList() {
+      console.info("$router.params : ", this.$router)
+
+      console.info("$router.params : ", this.$router.params)
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
         this.list = response.data
