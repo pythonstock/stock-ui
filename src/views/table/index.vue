@@ -118,6 +118,7 @@ export default {
         importance: undefined,
         title: undefined,
         type: undefined,
+        name: '',
         sort: '+id'
       },
       importanceOptions: [1, 2, 3],
@@ -155,9 +156,11 @@ export default {
   },
   methods: {
     getList() {
-      console.info("$router.params : ", this.$router)
 
-      console.info("$router.params : ", this.$router.params)
+      let table_name = this.$route.path.replace("/stock/table/","")
+      console.info("$router.path : ", this.$route.path)
+      console.info("$table_name : ", table_name)
+      this.listQuery.name =  table_name
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
         this.list = response.data
