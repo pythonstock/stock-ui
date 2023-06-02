@@ -1,3 +1,16 @@
+### 说明，项目迁移到了Gitee 啦，最后一次修改，2023-06-02 执行存档
+
+项目迁移到这里了：此项目后续更新访问这里：
+
+https://gitee.com/pythonstock/stock-ui
+
+github项目后续就Archives存档了，不再更新了！
+
+csdn的pythonstock专栏地址，相关资料都在这里有说明：
+
+https://blog.csdn.net/freewebsys/category_9285317.html
+
+
 ## 1，股票系统前端项目
 
 使用vue-element-admin的模板进行项目开发：
